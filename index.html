@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soaring Aspirations - Mountains in Heart, Clouds in Reach</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a365d', // Navy Blue
+                        secondary: '#927057', // Golden Brown
+                        neutral: '#f8f5f0', // Creamy Background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            }
+            .bg-blur {
+                backdrop-filter: blur(8px);
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-neutral font-sans text-gray-800 antialiased">
+    <nav class="fixed top-0 left-0 w-full bg-primary/90 text-white bg-blur z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-serif font-bold tracking-wider">Soaring Spirit</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#intro" class="hover:text-secondary transition-colors">Prologue</a>
+                <a href="#article" class="hover:text-secondary transition-colors">The Vision</a>
+                <a href="#gallery" class="hover:text-secondary transition-colors">Scenery</a>
+                <a href="#conclusion" class="hover:text-secondary transition-colors">Epilogue</a>
+            </div>
+            <button class="md:hidden text-2xl" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="md:hidden hidden bg-primary/95 w-full" id="mobileMenu">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-4">
+                <a href="#intro" class="py-2 hover:text-secondary transition-colors">Prologue</a>
+                <a href="#article" class="py-2 hover:text-secondary transition-colors">The Vision</a>
+                <a href="#gallery" class="py-2 hover:text-secondary transition-colors">Scenery</a>
+                <a href="#conclusion" class="py-2 hover:text-secondary transition-colors">Epilogue</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-16 h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1036/1920/1080');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 text-center text-white z-10">
+            <h1 class="text-[clamp(2.5rem,8vw,5rem)] font-serif font-bold mb-6 text-shadow">Soaring Aspirations</h1>
+            <p class="text-[clamp(1rem,3vw,1.5rem)] max-w-3xl mx-auto mb-8 text-shadow italic">
+                Valleys in the heart, mountains in the eyes; soaring clouds in the chest, the universe in every step.
+            </p>
+            <a href="#article" class="inline-block bg-secondary/90 hover:bg-secondary text-white px-8 py-3 rounded-full font-medium transition-all transform hover:scale-105">
+                Read the Vision <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </header>
+
+    <section id="intro" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-serif font-bold text-primary mb-6">What is a Soaring Aspiration?</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    It is not the frivolity of arrogance, nor the illusion of aiming impractically high;<br>
+                    It is the certainty of gathering strength in silence, the unyielding perseverance,<br>
+                    and the realm of life that hears thunder in silence and sees the extraordinary in the ordinary.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-neutral p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-4xl text-secondary mb-4"><i class="fas fa-mountain"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Aim High</h3>
+                    <p class="text-gray-600">Unbound by immediate gains and losses, untrapped by current troubles. Take the mountains and seas as your pattern, and heaven and earth as your mind.</p>
+                </div>
+                <div class="bg-neutral p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-4xl text-secondary mb-4"><i class="fas fa-person-running"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Steady and Far</h3>
+                    <p class="text-gray-600">Every step forward is grounded, every growth is an accumulation of strength, fulfilling the grand aspirations in your heart through action.</p>
+                </div>
+                <div class="bg-neutral p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-4xl text-secondary mb-4"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Righteous Innovation</h3>
+                    <p class="text-gray-600">Seek breakthroughs within the rules, find new opportunities in the routine, and achieve a unique self with wisdom and courage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="article" class="py-20 bg-neutral">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <article class="prose prose-lg max-w-none">
+                    <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-serif font-bold text-primary mb-8 border-b border-secondary pb-4">
+                        Soaring Aspirations: Forging the Extraordinary from the Ordinary
+                    </h2>
+                    <div class="mb-8">
+                        <img src="https://picsum.photos/id/1048/1200/600" alt="Mountain and Water Landscape" class="w-full h-auto rounded-lg shadow-md mb-4">
+                        <p class="text-sm text-gray-500 text-center italic">With mountains and seas in the heart, fear not the long road.</p>
+                    </div>
+                    <p class="mb-4 leading-relaxed">
+                        The world admires "greatness," yet often misinterprets its meaning. Some think it means holding a high position, some think it means immense wealth, and some think it means speaking shocking words. However, true greatness is never a label used to show off outwardly, but a power growing inwardly—it is the certainty of "going forward even against millions," the resilience of "staying strong through countless blows," and the perseverance of "waiting for the clouds to part and the moon to shine."
+                    </p>
+                    <p class="mb-4 leading-relaxed">
+                        A soaring aspiration cannot be achieved overnight. It hides in every early morning, every late-night session at the desk, every time you stand up after a fall, and every moment of persistence amidst doubt. There is no need to rush, no need to belittle oneself. All the greatness in the world begins with ordinary accumulation. Just like a high mountain, it is not formed in a single day, but through the stacking of every grain of dust, it eventually becomes towering; just like a river, it is not gathered by a single drop, but through the confluence of every tiny stream, it eventually becomes vast.
+                    </p>
+                    <blockquote class="border-l-4 border-secondary pl-4 italic text-gray-700 mb-4 font-serif">
+                        So-called greatness is simply doing what others gloss over to the extreme; walking the path others gave up to the very end; and guarding the dream others despised until it comes true.
+                    </blockquote>
+                    <p class="mb-4 leading-relaxed">
+                        There is no need to envy the light of others, nor to be anxious about your own pace. Everyone has their own time zone, everyone has their own mountains and seas. You only need to calm your mind, do every task at hand well, walk every step in front of you well, use the ordinary as your foundation, and persistence as your wings, and you will eventually reach your own soaring heights. By then, you will find that true greatness is not becoming a legend in the eyes of others, but living as the hero in your own heart.
+                    </p>
+                    <p class="leading-relaxed">
+                        A soaring aspiration is not an unreachable fantasy, but a grounded practice. May you and I both forge extraordinary aspirations with our ordinary selves, and live out our own magnificent lives in a corner of this world.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-serif font-bold text-primary mb-12 text-center">
+                Scenery of the Soaring
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-[1.02]">
+                    <img src="https://picsum.photos/id/1018/800/600" alt="Sea of Clouds and Mountains" class="w-full h-64 object-cover transition-transform hover:scale-110">
+                    <div class="p-4 bg-neutral">
+                        <h3 class="font-bold text-primary mb-2">High Mountains, Long Roads</h3>
+                        <p class="text-sm text-gray-600">Though the road is long, walking will get you there; though the task is hard, doing it will bring success.</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-[1.02]">
+                    <img src="https://picsum.photos/id/1015/800/600" alt="Morning Mist and Stream" class="w-full h-64 object-cover transition-transform hover:scale-110">
+                    <div class="p-4 bg-neutral">
+                        <h3 class="font-bold text-primary mb-2">Still Waters Run Deep</h3>
+                        <p class="text-sm text-gray-600">True strength is the accumulation of power in silence.</p>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all transform hover:scale-[1.02]">
+                    <img src="https://picsum.photos/id/1039/800/600" alt="Sunrise over the Sea of Clouds" class="w-full h-64 object-cover transition-transform hover:scale-110">
+                    <div class="p-4 bg-neutral">
+                        <h3 class="font-bold text-primary mb-2">Finally Seeing the Dawn</h3>
+                        <p class="text-sm text-gray-600">At the end of perseverance, there will be a sky full of glowing clouds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="conclusion" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-serif font-bold mb-8">Epilogue</h2>
+                <p class="text-lg leading-relaxed mb-10">
+                    A soaring aspiration is not a slogan, but an attitude towards life.<br>
+                    No need to force everyone's approval, just seek a clear conscience;<br>
+                    No need to pursue perfection in everything, just give it your all.<br>
+                    May you and I both harbor soaring aspirations, walk with the wind,<br>
+                    and live out our greatest selves in our own unique ways.
+                </p>
+                <div class="inline-block border-2 border-secondary px-8 py-3 rounded-full">
+                    <span class="font-serif text-xl tracking-wider italic">Mountains and seas have their time of return, winds and rains have their time of meeting.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="font-serif text-xl mb-4">Soaring Aspirations</p>
+            <p class="text-gray-400 text-sm">© 2026 Mountains in Heart, Clouds in Reach | Forging the Extraordinary from the Ordinary</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('py-2');
+                nav.classList.remove('py-3');
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.add('py-3');
+                nav.classList.remove('py-2');
+                nav.classList.remove('shadow-lg');
+            }
+
+            // Back to Top Button Visibility
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 500) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.add('opacity-0', 'invisible');
+                backToTop.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        // Back to Top Functionality
+        document.getElementById('backToTop').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scrolling for Anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    const icon = menuBtn.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
